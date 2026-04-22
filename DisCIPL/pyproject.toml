@@ -1,0 +1,54 @@
+[tool.poetry]
+name = "disciple"
+version = "0.1.0"
+description = ""
+authors = ["Gabe Grand <grandg@mit.edu>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+torch = "^2.1.2"
+numpy = "^1.26.2"
+transformers = "^4.51.0"
+bitsandbytes = "^0.43.3"
+accelerate = ">=0.26.0,<1.0.0"
+scipy = "^1.11.4"
+protobuf = "^5.27.2"
+python-dotenv = "^1.0.1"
+nltk = "^3.9.1"
+evaluate = "^0.4.2"
+openai = "^1.44.1"
+llama-index = "^0.11.8"
+tiktoken = "^0.7.0"
+pytest-asyncio = "^0.25.2"
+jinja2 = "^3.1.5"
+llamppl = "^0.2.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.0"
+black = "^23.12.1"
+jupyterlab = "^4.0.9"
+ipywidgets = "^8.1.1"
+matplotlib = "^3.9.1"
+seaborn = "^0.13.2"
+pre-commit = "^3.7.1"
+scikit-learn = "^1.6.1"
+tabulate = "^0.9.0"
+
+[tool.poetry.group.collie.dependencies]
+collie-bench = "^0.1.0" # NOTE: PyPI version currently lacks the dataset file all_data.dill so we still have to add it as a git submodule
+
+[tool.poetry.group.ifeval.dependencies]
+absl-py = "^2.1.0"
+langdetect = "^1.0.9"
+nltk = "^3.9.1"
+immutabledict = "^4.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+markers = [
+    "gpu: marks tests as requiring a GPU (deselect with '-m \"not gpu\"')",
+]

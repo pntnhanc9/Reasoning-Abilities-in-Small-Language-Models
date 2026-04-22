@@ -1,0 +1,7 @@
+{
+    "type": "openai",
+    "name": "gpt-4o",
+    "params": {
+        "openai_model": "gpt-4o-2024-08-06"
+    }
+}

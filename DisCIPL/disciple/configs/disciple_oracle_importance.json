@@ -1,0 +1,12 @@
+{
+    "type": "disciple_importance",
+    "name": "disciple_oracle_importance",
+    "params": {
+        "n_attempts": 1,
+        "model_generator_params": {
+            "cache_behavior": "latest_read_only",
+            "load_models_from_pipeline": "disciple_oracle_smc"
+        },
+        "oracle": true
+    }
+}

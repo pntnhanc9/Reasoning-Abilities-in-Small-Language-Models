@@ -1,0 +1,7 @@
+{
+    "type": "openai_o1",
+    "name": "o1",
+    "params": {
+        "openai_model": "o1-2024-12-17"
+    }
+}

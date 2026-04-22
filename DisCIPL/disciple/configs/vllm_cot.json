@@ -1,0 +1,8 @@
+{
+    "type": "vllm",
+    "name": "vllm_cot",
+    "params": {
+        "beam_search": false,
+        "cot": true
+    }
+}

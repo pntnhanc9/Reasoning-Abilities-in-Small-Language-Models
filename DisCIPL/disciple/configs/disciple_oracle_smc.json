@@ -1,0 +1,11 @@
+{
+    "type": "disciple_smc",
+    "name": "disciple_oracle_smc",
+    "params": {
+        "n_attempts": 3,
+        "model_generator_params": {
+            "cache_behavior": "optional"
+        },
+        "oracle": true
+    }
+}

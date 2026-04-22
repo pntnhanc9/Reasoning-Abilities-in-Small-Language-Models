@@ -1,0 +1,6 @@
+{
+    "type": "vllm",
+    "params": {
+        "beam_search": false
+    }
+}
