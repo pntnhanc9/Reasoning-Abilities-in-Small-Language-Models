@@ -1,0 +1,6 @@
+total_size_before (MB): 3424.75
+total_size_after (MB): 3407.14
+total_time (seconds): 16314.67
+ram_peak (MB): 5845.76
+ram_consump (MB): 3476.35
+disk_storage (MB): 180.81
