@@ -286,7 +286,7 @@ pipeline = SimplifiedPipeline(max_attempts=5)
 **Solution 2**: Use larger planner
 ```python
 pipeline = SimplifiedPipeline(
-    planner_model="meta-llama/Llama-3.1-8B-Instruct"
+    planner_model="cyankiwi/Qwen3.5-9B-AWQ-4bit"
 )
 ```
 
@@ -396,7 +396,7 @@ Result: InferenceResult
 
 - **Original Paper**: https://arxiv.org/abs/2504.07081
 - **LLaMPPL**: https://github.com/genlm/llamppl
-- **Llama Models**: https://huggingface.co/meta-llama
+- **Qwen Models**: https://huggingface.co/Qwen
 - **HuggingFace Docs**: https://huggingface.co/docs
 - **PyTorch Docs**: https://pytorch.org/docs
 
@@ -415,7 +415,7 @@ A: Model download: 5-10 minutes (depends on internet)
    First inference: 30-60 seconds
 
 **Q: Can I use larger models?**
-A: Yes! Change `planner_model` to "meta-llama/Llama-3.1-8B-Instruct"
+A: Yes! Change `planner_model` to "cyankiwi/Qwen3.5-9B-AWQ-4bit"
    Requires 16GB+ GPU.
 
 **Q: Can I use smaller models?**

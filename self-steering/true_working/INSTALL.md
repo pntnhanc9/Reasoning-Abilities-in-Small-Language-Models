@@ -114,8 +114,8 @@ pip install transformers
 ```bash
 # In quick_start.py or your script, change:
 pipeline = SimplifiedPipeline(
-    planner_model="meta-llama/Llama-3.2-1B-Instruct",
-    follower_model="meta-llama/Llama-3.2-1B-Instruct",
+    planner_model="cyankiwi/Qwen3.5-9B-AWQ-4bit",
+    follower_model="Qwen/Qwen3.5-0.8B",
     dtype="float16",  # Use float16 to save memory
     max_tokens=32,    # Reduce token generation
 )
@@ -136,11 +136,13 @@ nvidia-smi
 **Solution**: Check internet connection
 ```bash
 # Manual download
-huggingface-cli download meta-llama/Llama-3.2-1B-Instruct
+huggingface-cli download cyankiwi/Qwen3.5-9B-AWQ-4bit
+huggingface-cli download Qwen/Qwen3.5-0.8B
 
 # Or login to HuggingFace
 huggingface-cli login
-huggingface-cli download meta-llama/Llama-3.2-1B-Instruct
+huggingface-cli download cyankiwi/Qwen3.5-9B-AWQ-4bit
+huggingface-cli download Qwen/Qwen3.5-0.8B
 ```
 
 ### Issue: "Slow first run"

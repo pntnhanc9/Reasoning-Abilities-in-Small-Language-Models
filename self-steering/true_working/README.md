@@ -43,7 +43,8 @@ pip install torch transformers huggingface-hub
 ### 2. Download Models (optional)
 
 ```bash
-huggingface-cli download meta-llama/Llama-3.2-1B-Instruct
+huggingface-cli download cyankiwi/Qwen3.5-9B-AWQ-4bit
+huggingface-cli download Qwen/Qwen3.5-0.8B
 ```
 
 Models will be auto-downloaded on first use if not present.
@@ -84,8 +85,8 @@ from evaluations.puzzle.tasks import SquareWordPoem
 async def main():
     # Create pipeline
     pipeline = SimplifiedPipeline(
-        planner_model="meta-llama/Llama-3.2-1B-Instruct",
-        follower_model="meta-llama/Llama-3.2-1B-Instruct",
+        planner_model="cyankiwi/Qwen3.5-9B-AWQ-4bit",
+        follower_model="Qwen/Qwen3.5-0.8B",
         max_tokens=128,
         max_attempts=3,
         results_dir="./results"
@@ -145,8 +146,8 @@ Each `result.json` contains:
 ### For Testing (Fast)
 ```python
 pipeline = SimplifiedPipeline(
-    planner_model="meta-llama/Llama-3.2-1B-Instruct",
-    follower_model="meta-llama/Llama-3.2-1B-Instruct",
+    planner_model="cyankiwi/Qwen3.5-9B-AWQ-4bit",
+    follower_model="Qwen/Qwen3.5-0.8B",
 )
 ```
 - GPU: ~4GB
@@ -156,8 +157,8 @@ pipeline = SimplifiedPipeline(
 ### For Production (Best Quality)
 ```python
 pipeline = SimplifiedPipeline(
-    planner_model="meta-llama/Llama-3.1-8B-Instruct",
-    follower_model="meta-llama/Llama-3.2-1B-Instruct",
+    planner_model="cyankiwi/Qwen3.5-9B-AWQ-4bit",
+    follower_model="Qwen/Qwen3.5-0.8B",
 )
 ```
 - GPU: ~18GB
@@ -251,8 +252,8 @@ Validate Poem A against task requirements
 **Option 1**: Use smaller models
 ```python
 pipeline = SimplifiedPipeline(
-    planner_model="meta-llama/Llama-3.2-1B-Instruct",
-    follower_model="meta-llama/Llama-3.2-1B-Instruct",
+    planner_model="cyankiwi/Qwen3.5-9B-AWQ-4bit",
+    follower_model="Qwen/Qwen3.5-0.8B",
 )
 ```
 
@@ -281,7 +282,7 @@ pipeline = SimplifiedPipeline(
 **Use larger planner**:
 ```python
 pipeline = SimplifiedPipeline(
-    planner_model="meta-llama/Llama-3.1-8B-Instruct",
+    planner_model="cyankiwi/Qwen3.5-9B-AWQ-4bit",
 )
 ```
 
@@ -314,7 +315,7 @@ pipeline = SimplifiedPipeline(
 - Original Paper: https://arxiv.org/abs/2504.07081
 - COLM 2025: https://openreview.net/forum?id=XvCBtm5PgF
 - LLaMPPL: https://github.com/genlm/llamppl
-- Llama Models: https://huggingface.co/meta-llama
+- **Qwen Models**: https://huggingface.co/Qwen
 
 ## License
 
