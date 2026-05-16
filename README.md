@@ -6,21 +6,13 @@ Dự án này nghiên cứu khả năng lập luận của các mô hình ngôn 
 
 Dự án được chia thành hai thư mục chính. **Nhấp vào từng thư mục bên dưới để xem hướng dẫn chi tiết:**
 
-### 1. **[GRPO/](./GRPO/README.md)** ✅ HOÀN THIỆN
+### 1. **[GRPO/](./GRPO/README.md)** 
 Thư mục này chứa toàn bộ code và kết quả về phương pháp GRPO (Generative Reward Process Optimization).
 
 **Trạng thái:** Toàn bộ module đã hoàn thiện và sẵn sàng sử dụng.
 
 👉 [Xem hướng dẫn chi tiết trong GRPO/README.md](./GRPO/README.md)
 
----
-
-### 2. **[self-steering/](./self-steering/README.md)** 🔧 ĐANG PHÁT TRIỂN
-Thư mục này chứa code liên quan đến phương pháp tự điều hướng (Self-Steering) cho các mô hình ngôn ngữ nhỏ.
-
-👉 [Xem hướng dẫn chi tiết trong self-steering/README.md](./self-steering/README.md)
-
----
 
 ## 🚀 Hướng Dẫn Bắt Đầu
 
@@ -35,7 +27,6 @@ Thư mục này chứa code liên quan đến phương pháp tự điều hướ
 | Thành Phần | Mô Tả |
 |-----------|-------|
 | **GRPO** | Phương pháp tối ưu hóa quá trình phần thưởng sinh thành - hoàn thiện |
-| **Self-Steering** | Phương pháp tự điều hướng cho mô hình nhỏ - đang phát triển |
 
 ---
 

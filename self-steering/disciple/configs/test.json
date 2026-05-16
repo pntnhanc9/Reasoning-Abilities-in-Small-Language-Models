@@ -1,9 +1,0 @@
-{
-    "type": "disciple_smc",
-    "name": "test",
-    "params": {
-        "model_generator_params": {
-            "debug_mode": true
-        }
-    }
-}

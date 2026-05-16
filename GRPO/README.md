@@ -17,7 +17,7 @@ GRPO/
 │       └── grpo-source-code/
 │
 ├── compare_kaggle_models.ipynb   # Notebook so sánh hiệu năng giữa các mô hình/lần chạy
-└── evaluate_kaggle_models.ipynb  # Notebook đánh giá chi tiết kết quả của từng mô hình
+└── evaluation  # Folder đánh giá chi tiết kết quả của từng mô hình của tác giả trên MultiArith và SVAMP
 ## 🛠️ Hướng dẫn Huấn luyện (Training) trên Kaggle
 
 Để chạy lại quá trình huấn luyện mô hình trên Kaggle, hãy thực hiện theo các bước sau:
@@ -38,14 +38,24 @@ GRPO/
 
 ---
 
-## 📊 Hướng dẫn Đánh giá (Evaluation & Comparison)
+## 📊 Hướng dẫn So sánh các model được fine tune và train (Comparison)
 
 Sau khi có kết quả tải về từ Kaggle (lưu vào các thư mục `results_*`), bạn sử dụng 2 file Notebook ở thư mục gốc để phân tích:
 
-* 📝 **`evaluate_kaggle_models.ipynb`**: Sử dụng file này để phân tích chi tiết log, loss, và các metric đánh giá (evaluation) của một mô hình cụ thể.
 * 📈 **`compare_kaggle_models.ipynb`**: Sử dụng file này để vẽ biểu đồ và so sánh trực quan hiệu năng giữa các lần chạy khác nhau (DeepSeek 1 vs 2, Qwen 1 vs 2, hoặc DeepSeek vs Qwen).
 
 > **Lưu ý:** Trước khi chạy 2 notebook này ở máy local, hãy đảm bảo bạn đã cài đặt đủ các thư viện cần thiết (`pandas`, `matplotlib`, `seaborn`, `jupyter`,...) và trỏ đúng đường dẫn đọc dữ liệu vào thư mục `Kaggle_data`.
+
+---
+
+## 📝 Hướng dẫn Đánh giá mô hình (Evaluation)
+
+Để đánh giá chi tiết hiệu năng của các mô hình Open-RS, bạn sẽ sử dụng các file nằm trong thư mục `GRPO/evaluation/`. Bạn cần tải các file notebook và tập dữ liệu đánh giá lên nền tảng Kaggle để tiến hành chạy thử nghiệm:
+
+* 📂 **Dữ liệu đánh giá (Datasets):** Hai file `MultiArith_eval_ready.jsonl` và `SVAMP_eval_ready.jsonl` chứa các câu hỏi toán học đã được chuẩn bị sẵn.
+* 📓 **Notebook chạy đánh giá:** Bao gồm 6 file `.ipynb` tương ứng với 3 phiên bản mô hình (Open-RS1, Open-RS2, Open-RS3) được test độc lập trên 2 tập dữ liệu (MultiArith và SVAMP). Ví dụ: `Open-RS1-MultiArith.ipynb`, `Open-RS2-SVAMP.ipynb`,... 
+
+> **Lưu ý:** Khi đưa các file này lên Kaggle để chạy thực nghiệm, hãy đảm bảo bạn đã upload các file dữ liệu `.jsonl` lên Kaggle (hoặc Add Data vào môi trường làm việc). Đồng thời, nhớ kiểm tra và trích xuất đúng đường dẫn thư mục (ví dụ: `/kaggle/input/...`) vào trong code đọc dữ liệu của từng file Jupyter Notebook trước khi bấm chạy!
 
 ---
 
