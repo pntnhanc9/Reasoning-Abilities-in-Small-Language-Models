@@ -1,0 +1,9 @@
+{
+    "type": "disciple_smc",
+    "params": {
+        "n_attempts": 1,
+        "model_generator_params": {
+            "cache_behavior": "optional"
+        }
+    }
+}

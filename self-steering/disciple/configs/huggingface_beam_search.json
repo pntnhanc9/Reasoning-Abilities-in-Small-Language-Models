@@ -1,0 +1,7 @@
+{
+    "type": "huggingface",
+    "name": "huggingface_beam_search",
+    "params": {
+        "beam_search": true
+    }
+}
